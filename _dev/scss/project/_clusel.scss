@@ -1,0 +1,70 @@
+.clusel {
+  margin-top: 30px;
+
+  &__main {
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__bottom {
+    text-align: center;
+  }
+}
+
+.prev,
+.next {
+  width: 30px;
+  height: 30px;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background: #000;
+}
+
+.slideContainer {
+  position: relative;
+  width: 400px;
+  height: 190px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 200px);
+  display: none;
+  width: 100%;
+  height: 100%;
+  font-size: 3.6rem;
+  line-height: 5.27;
+  text-align: center;
+  color: #000;
+  background: #fff;
+
+  &--active {
+    display: block;
+  }
+}
+
+.dots {
+  display: flex;
+  width: 60px;
+  justify-content: space-between;
+  margin: 10px auto 0 auto;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+
+  &--active {
+    background: #000;
+  }
+}

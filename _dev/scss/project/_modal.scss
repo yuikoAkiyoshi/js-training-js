@@ -1,0 +1,51 @@
+.modal {
+  position: relative;
+
+  &__btn {
+    @include btn;
+
+    &:hover {
+      @include btnHover;
+    }
+  }
+
+  &__mask {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  &__window {
+    position: absolute;
+    z-index: 2;
+    top: -70px;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.8s;
+    background: #fff;
+  }
+
+  &__text {
+    margin: 0 0 20px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__mask--hidden {
+    display: none;
+  }
+
+  &__window--hidden {
+    display: none;
+    transform: translate(0, -300px);
+  }
+}

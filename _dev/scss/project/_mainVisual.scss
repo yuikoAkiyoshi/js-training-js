@@ -1,0 +1,10 @@
+.mainVisual {
+  box-sizing: border-box;
+  height: 400px;
+  padding-top: 170px;
+  background: linear-gradient(to right, #ddefff, #d9e3d0);
+
+  &__textArea {
+    text-align: center;
+  }
+}

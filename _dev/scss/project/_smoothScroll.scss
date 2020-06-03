@@ -1,0 +1,7 @@
+.smoothScroll {
+  @include btn;
+
+  &:hover {
+    @include btnHover;
+  }
+}
